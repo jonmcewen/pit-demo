@@ -1,11 +1,11 @@
 package pit.demo
 
+import pit.demo.data.Person
+
 class HeightComparator {
 
-    data class Person(val name: String, val height: Int)
-
     fun tallerOf(a: Person, b: Person): Person {
-        if (a.height > b.height) {
+        if (a.height >= b.height) {
             return a
         }
         return b

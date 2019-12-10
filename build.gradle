@@ -24,6 +24,7 @@ dependencies {
 
 pitest {
     targetClasses = ['pit.demo.*']
+    excludedClasses = ['pit.demo.data.*']
     //pitestVersion = '1.4.1' //not needed when a default PIT version should be used
     //threads = 4
     outputFormats = ['HTML']

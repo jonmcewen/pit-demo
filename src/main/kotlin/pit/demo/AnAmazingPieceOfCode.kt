@@ -9,10 +9,10 @@ class AnAmazingPieceOfCode {
 
     fun divide(x: Int, y: Int): Int = x / y
 
-    fun biggerOf(x: Int, y: Int): Int {
+    fun biggerThan(x: Int, y: Int): Boolean {
         if (x > y) {
-            return x
+            return true
         }
-        return y
+        return false
     }
 }

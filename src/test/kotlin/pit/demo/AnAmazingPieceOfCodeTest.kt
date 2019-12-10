@@ -18,14 +18,16 @@ class AnAmazingPieceOfCodeTest {
     @Test
     fun testDividing() {
         val classUnderTest = AnAmazingPieceOfCode()
-        classUnderTest.divide(2, 2)
+        assertEquals(1, classUnderTest.divide(2, 2))
     }
 
     @Test
     fun testBiggerOf() {
         val classUnderTest = AnAmazingPieceOfCode()
-        assertEquals(3, classUnderTest.biggerOf(2, 3))
-        assertEquals(3, classUnderTest.biggerOf(3, 2))
+        assertEquals(false, classUnderTest.biggerThan(2, 3))
+        assertEquals(true, classUnderTest.biggerThan(3, 2))
+        assertEquals(false, classUnderTest.biggerThan(3, 3))
+
     }
 
 
