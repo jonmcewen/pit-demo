@@ -6,14 +6,8 @@ package pit.demo
 
 import kotlin.test.Test
 import kotlin.test.assertEquals
-import kotlin.test.assertTrue
 
 class AnAmazingPieceOfCodeTest {
-    @Test
-    fun testSomeLibraryMethod() {
-        val classUnderTest = AnAmazingPieceOfCode()
-        assertTrue(classUnderTest.someLibraryMethod(), "someLibraryMethod should return 'true'")
-    }
 
     @Test
     fun testAdding() {
